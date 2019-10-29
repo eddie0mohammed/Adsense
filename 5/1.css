@@ -2,7 +2,13 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+body{
+    height: 100%;
+    position: relative;
+}
+
 
 #bg{
     position: fixed;
@@ -18,11 +24,13 @@
 .wrapper{
     position: relative;
     width: 75%;
-    margin: 100px auto;
+    margin: 0px auto 0 auto;
     z-index: 1;
     background: #fff;
     padding: 50px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .wrapper h1{
@@ -47,4 +55,48 @@ img{
 .list_container{
     width: 90%;
     padding-left: 50px;
+}
+
+/* footer */
+
+.footer{
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+    height: 50px;
+	background: black;
+    color: white;
+    
+	
+
+	display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.footer a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+	color: grey;
+}
+
+.footer .links{
+	color: white;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
 }

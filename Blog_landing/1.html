@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="../nav/1.css">
+    <title>Blog</title>
+</head>
+<body>
+
+    <header style="position: absolute; top: 0; left: 0; z-index: 1000">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+    <div id="bg"></div>
+    <div class="wrapper">
+        <h1 class="title">Blog</h1>
+        <img src="./blog.1.png" alt="featured image">
+        
+        <p class="text">Article list:</p>
+        <ol class="list">
+            <li><a href="#">Guide for new Cadets joining 42SV</a></li>
+            <li><a href="#">How to make the most out of 42SV</a></li>
+            <li><a href="#">How to have a healthy lifestyle while studying at 42</a></li>
+            <li><a href="#">Guide to getting a job as soon as possible</a></li>
+            <li><a href="#">Guide to learning web dev part1</a></li>
+            <li><a href="#">Guide to learning web dev part 2</a></li>
+            <li><a href="#">Guide to start making money with what you learnt so far</a></li>
+            <li><a href="#">Guide to learning web dev part 3</a></li>
+            <li><a href="#">Guide to learning web dev part 4 </a></li>
+            <li><a href="#">Application Phase</a></li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <p style="padding-left: 20px;"> &copy; Created by medun <script>document.write(new Date().getFullYear())</script></p>
+        <div class="links">
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Sitemap</a>
+        </div>
+        
+    </div>
+    
+
+    <script>
+            var bgPattern = document.getElementById('bg');
+            window.addEventListener('scroll', function(){
+                bgPattern.style.backgroundPosition = +window.pageYOffset+'px';
+            })
+        </script>
+
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const menu = document.querySelector('.menu-toggle');
+
+        menu.addEventListener('click', function(){
+            nav.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>

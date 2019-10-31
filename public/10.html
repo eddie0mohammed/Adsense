@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/10.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Application Phase</title>
+</head>
+<body>
+
+    <header style="position: absolute; top: 0; left: 0; z-index: 1000">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog_list.html">Blog</a></li>
+                <li><a href="https://www.moedun.com" target="_blank">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+    <div id="bg"></div>
+    <div class="wrapper">
+        <h1 class="title">Application Phase</h1>
+        <img src="./images/10/10.1.jpeg" alt="featured image">
+        <br><br><br>
+
+        <p>You are a Frontend Developer.</p>
+        <p>At this point, you already possess all the skills needed to work as a Frontend Developer.</p>
+        <p>It's time to start applying to jobs.</p>
+        <br><br>
+
+        <p><strong>Note:</strong>While you start application phase, you should still do the following:</p>
+        <p>- You should still be learning data structures and algorithms.</p>
+        <p>- You should keep solving 1 coding challenge a day ( you should have solved over 100 by now) </p>
+        <p>- You should continue making money on the side (refer to this <a href="../7:money/1.html">article</a>)</p>
+        <br><br>
+
+        <img src="./images/10/10.2.png" alt="featured image">
+        <br><br><br>
+
+        <h2>What do i need to start applying?</h2>
+        <p>Below is a list of things you need to do in order to start sending out job applications:</p>
+        <div class="list_container">
+           <p><strong> - Build a portfolio</strong></p>
+           <p>Research about some portfolio and find something you like . Copy the design and customize it to you own style and build it with React. 
+            Make it look good. Your portfolio represents who you are. 
+            Put your projects on your portfolio
+            </p>
+            <br>
+            <p><strong>Note:</strong> You need 2 to 3 big projects on your portfolio. Other than projects you used for learning. (consider building: a website for a restaurant, a digital agency, an ecommerce front end). Research, copy their design and re-build them. It's important that you don't design the websites yourself. You are a developer, not a designer.</p>
+            <br><br>
+            
+            <p><strong>- Build your resume.</strong></p>
+            <p>Spend time on your resume. Build something professional. List you skills, links, experience (teaching, freelancing). You need something that can catch the eye of the employers. Keep in mind that on average HR people spend less than 10 seconds on a resume.</p>
+            <br><br>
+
+            <p><strong>- Write a Cover letter</strong></p>
+            <p>Your cover letter represents who you are as a person. You need something that will make you stand out. You should mention why you are applying to that specific job, why should they consider you and how you can contribute to the company.</p>
+            <br><br>
+
+            <p><strong>- Create a LinkedIn Profile</strong></p>
+            <p>You need to be on LinkedIn. You need to research and build the best profile you can. Choose you picture wisely. That's the first thing people looking at your profile will judge you on.</p>
+            <br><br>
+
+            <p><strong>- Start sending application</strong></p>
+            <p>Apply to everything you see. It takes about 1000 applications to land a job. You will not hear from most of your application.</p>
+            <p><strong>Note:</strong>The application process is the hardest. Don’t give up if you don’t hear back from your applications. You should send at least 30 applications a day. You have be patient.
+                You will get some interviews. Even if you don’t care about the company, you should still apply and go for every interview. It will prepare you for other interviews. It’s all experience and there are no bad experiences.</p>
+            
+        </div>
+        
+        <br>
+        <p><strong>Important note:</strong></p>
+        <p>When applying, even if you don’t know every technology the company uses, you should still send your resume. If they invite you for an interview, you can tell them you can learn anything required.
+            For instance, you know React and the company uses Angular. It’s not a problem .Most likely, your technical interview will be using VanillaJS. Which you know already.
+           
+           You already learnt so much. At this point, you can pick up any language or framework within a week or 2 and start being productive with them.
+           </p>
+           <br>
+           <p>Keep one thing in mind. It’s one thing to say that you can code in a language, and it’s another to say that you can write industry standard, following the right design patterns, scalable, maintainable code. That only comes with experience on the job. That takes time.</p>
+           <br><br>
+
+           <h3>Remember: </h3>
+           <p> it’s just a matter of how many applications you send. </p>
+
+           <br><br>
+           <h3>Good luck and never give up. </h3>
+           <br><br>
+
+        <img src="./images/10/10.3.png" alt="featured image">
+
+        <br><br><br>
+
+        
+
+    </div>
+    <div class="footer">
+        <p style="padding-left: 20px;"> &copy; Created by medun <script>document.write(new Date().getFullYear())</script></p>
+        <div class="links">
+                <a href="contact.html">Contact</a>
+                <a href="policies.html">Policies</a>
+                <a href="sitemap.html">Sitemap</a>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var bgPattern = document.getElementById('bg');
+        window.addEventListener('scroll', function(){
+            bgPattern.style.backgroundPosition = +window.pageYOffset+'px';
+        })
+    </script>
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const menu = document.querySelector('.menu-toggle');
+
+        menu.addEventListener('click', function(){
+            nav.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+</html>

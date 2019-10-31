@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100%;
+    position: relative;
+}
+
+#bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/42logo.png);
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+.wrapper{
+    position: relative;
+    width: 75%;
+    margin: 0px auto 0 auto;
+    z-index: 1;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.wrapper h1{
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+img{
+    width: 100%;
+
+}
+
+.wrapper h2{
+    padding-bottom: 20px;
+}
+
+.wrapper p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* footer */
+
+.footer{
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+    height: 50px;
+	background: black;
+    color: white;
+    
+	
+
+	display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.footer a{
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+
+.footer a:hover{
+	text-decoration: underline;
+	color: grey;
+}
+
+.footer .links{
+	color: white;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+
+img{
+    width: 100%;
+    height: 300px;
+}

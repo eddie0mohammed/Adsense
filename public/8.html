@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/8.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Guide to learning web dev - part 3</title>
+</head>
+<body>
+
+    <header style="position: absolute; top: 0; left: 0; z-index: 1000">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog_list.html">Blog</a></li>
+                <li><a href="https://www.moedun.com" target="_blank">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+    <div id="bg"></div>
+    <div class="wrapper">
+        <h1 class="title">Guide to learning Frontend Web Development - part 3</h1>
+        <img src="./images/8/8.1.png" alt="featured image">
+        <br><br><br>
+
+
+
+        <h2>Phase 3: Solidify</h2>
+
+       <p><strong>Note:</strong> At this point, you should be comfortable with building anything as a front end developer.
+        You should also spend a few hours focussing on making money on the side with what you’ve learnt so far.</p>
+        <p>Check out this <a href="../8/1.html">article</a> related to start making money as a Frontend Web developer.</p>
+        <br><br>
+
+        <h3>Quick recap on your set of skills</h3>
+        <div class="list_container">
+            <ul>
+                <li><p>You should be an expert at writing Html and CSS</p> </li>
+                <li><p>You should be know javascript well and be able to solve most javascript coding problems.</p> </li>
+                <li><p>You should be comfortable working with Apis.</p></li>
+                <li><p>You should be comfortable with Firebase and know how to deploy your site.</p></li>
+                
+            </ul>
+        </div>
+        <br>
+        <p><strong>Note:</strong> In case you forgot some of the items mentionned in the list, don't worry. It’s normal. It’s impossible to retain everything. Instead, you should focus more on learning on the fly as needed.</p>
+
+        <br><br><br>
+
+        <img src="./images/8/8.2.png" alt="featured image">
+
+        <br><br><br>
+
+        <h3>Important:  Keep solving 1 js coding challenge a day.</h3>
+        <br><br>
+
+        <h2>Phase 3</h2>
+        <p><strong>Note:</strong> The items mentionned in Phase 3 should be learnt in parallel with earning money as a Frontend Developer.</p>
+        <br>
+
+
+        <h3>1. Go deeper with CSS and JS (2 weeks)</h3>
+        <div class="list_container">
+            <p>Relearn Flexbox and Grid</p>
+            <p>Start learning about css animations (keyframes). Practice.</p>
+            <p>Build a couple of projects (simple js components, tooltips, todolist, sliding navbar, ...)</p>
+   
+        </div>
+
+        <br><br>
+
+        <h3>2. Learn about basics of CSS design patterns: duration 3 days</h3>
+        <div class="list_container">
+            <p>Start with BEM. there are more design patterns but you will learn it as needed.</p>
+            <p>Starts using bem style of writing css. You’ll feel like a premium developer.</p>
+   
+        </div>
+
+        <br><br>
+
+        <h3>3. Learn the basics of Javascript design patterns.  (duration 5 days)</h3>
+        <div class="list_container">
+            <p>Focus on the basics. (singleton, module, revealing module, ...) :</p>
+            <p><strong>Note:</strong> You will forget most of these. However, it will be easier to re-learn them on the fly as needed. (Design patterns depend on what you are trying to build)</p>
+   
+        </div>
+
+        <br><br>
+
+        <h3>4. Study Data structures and Algorithms.</h3>
+        <div class="list_container">
+            <p>This will make you become a better developer. </p>
+            <p>Spend 1 hour a day for a period of 1 week. After that stick to 30 mins a day.</p>
+            <p><strong>Note:</strong> Keep learning Data Structures and Algorithms</p>
+            <p>Apply them to your coding problems.</p>
+   
+        </div>
+
+        <br><br>
+        <h3>You are now a Pro</h3>
+        <br>
+        <p>You should be able to build anything related to Frontend Web Development.</p>
+        <br>
+
+        <h3>Time to learn a Framework</h3>
+        <br>
+
+        <img src="./images/8/8.3.png" alt="featured image">
+
+        <br><br><br>
+
+        <p>Which Framework to learn? Angular, React, Vue, ... So many options !!! </p>
+        <p>Check out the <a href="../9/1.html">Guide to learning Frontend Web Development - part 4</a> to see which one to learn and why.</p>
+
+    </div>
+    <div class="footer">
+        <p style="padding-left: 20px;"> &copy; Created by medun <script>document.write(new Date().getFullYear())</script></p>
+        <div class="links">
+                <a href="contact.html">Contact</a>
+                <a href="policies.html">Policies</a>
+                <a href="sitemap.html">Sitemap</a>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var bgPattern = document.getElementById('bg');
+        window.addEventListener('scroll', function(){
+            bgPattern.style.backgroundPosition = +window.pageYOffset+'px';
+        })
+    </script>
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const menu = document.querySelector('.menu-toggle');
+
+        menu.addEventListener('click', function(){
+            nav.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+</html>

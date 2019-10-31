@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/9.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Guide to learning web dev - part 4</title>
+</head>
+<body>
+
+    <header style="position: absolute; top: 0; left: 0; z-index: 1000">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog_list.html">Blog</a></li>
+                <li><a href="https://www.moedun.com" target="_blank">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+    <div id="bg"></div>
+    <div class="wrapper">
+        <h1 class="title">Guide to learning Frontend Web Development - part 4</h1>
+        <img src="./images/9/9.1.png" alt="featured image">
+        <br><br><br>
+
+
+        <h2>Phase 4: Learning a Framework</h2>
+
+        <p>Learning a framework will increase you chances of getting a job.</p>
+        <br>
+        <h3>Why not learn a Framework during phase 1: </h3>
+        <p>You might think it would have been a good idea but it's not. You need have solid fundamentals and know how to build anything without a framework first.</p>
+        <br>
+        <p>Having weak fundamentals will only affect you career as a developer. That's why you should learn the old way of doing things first. Also, keep in mind, when you apply for a job, most of the time, the interviewer will question you on the fundamentals first. So, it's always good to have solid fundamentals.</p>
+        <p></p>
+        <br><br>
+
+        <p><strong>Note:</strong> While you start learning a framework, you should continue with the following in parallel.</p>
+        <div class="list_container">
+            <ul>
+                <li><p>Continue making money on the side</p> </li>
+                <li><p>Continue learning data structures and algorithms (30 mins a day)</p> </li>
+                <li><p>Continue solving 1 coding challenge a day</p></li>
+                
+            </ul>
+        </div>
+
+        <br><br><br>
+
+        <h2>Learning REACT</h2>
+
+        <p>Why React?</p>
+        <p>Simply because it's the framework that's mostly widely used at the moment. You want to learn a technology that is hot at the moment. Simple as that.</p>
+        <p><strong>Note:</strong>Keep in mind, the tech industry changes extremely fast. You need to be up to date with the latest technologies out there. That will increase your value as a developer.</p>
+        <br><br>
+        <img src="./images/9/9.2.jpg" alt="featured image">
+
+        <br><br><br>
+
+        <p><strong>Note:</strong> Before learning react, you should learn NPM (Node packet manager). <br> Learn to use npm to install packages. You’ll need it for REACT.</p>
+        <br><br>
+
+        <h2>Where to start?</h2>
+
+        <p>Below is a list of steps to follow to master React. Learn 1 at a time. Don't skip anything.</p>
+        <div class="list_container">
+            <p>1. Start with reading the <strong> whole</strong> documentation to get an overview of what react is and what it consists of.</p>
+            <p>2. Learn React (create-react-app, installing packages, react-router-dom). Follow tutorials and code along. </p>
+            <p>3. Learn about routing with <strong>React Router</strong></p>
+            <p>4. Practice by building simple projects (todo list, countdown timer, rock paper scissors game, simple multi page app.</p>
+            <p>5. After 5 projects with react and react router, learn <strong> Redux</strong>: A tool for state management. Don't get overwhelmed by people saying "redux is hard". It's not. It's just a matter of time till you get it. As soon as you understand how to use redux in your project, you'll see, it's simple.</p>
+            <p>6. Rebuild the same 5 project you previously built with React, but this time using Redux. </p>
+            <p>7. After completing 5 projects with React and Redux, learn about Context API. </p>
+            <p>8. Build the same 5 projects with React and Context API (don't use Redux)</p>
+            <p>9. Learn React Hooks. Thats the future of React.</p>
+            <p>10. Again build the same 5 projects using React, React Hooks and Context API. (you'll see the superpower of React Hooks and Context API when used together) </p>
+   
+        </div>
+
+        <br><br>
+
+       <p>At this point, you have learnt everything you need to get a job as a Frontend Developer.</p>
+       <p>You've come a long way and you've learnt so much. You might have forgotten some of the things you learnt. Don't worry. You will learn them again as needed</p>
+       <p>Keep in mind, at this point in time, learning is easy for you.</p>
+       <br>
+       <h3>Now, it's time to get a job</h3>
+        <br>
+
+        <img src="./images/9/9.3.png" alt="featured image">
+
+        <br><br><br>
+
+        <p>Time to work on your application.</p>
+        <p>Check out my article about the <a href="../10/1.html">Application Phase</a></p>
+
+    </div>
+    <div class="footer">
+        <p style="padding-left: 20px;"> &copy; Created by medun <script>document.write(new Date().getFullYear())</script></p>
+        <div class="links">
+                <a href="contact.html">Contact</a>
+                <a href="policies.html">Policies</a>
+                <a href="sitemap.html">Sitemap</a>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var bgPattern = document.getElementById('bg');
+        window.addEventListener('scroll', function(){
+            bgPattern.style.backgroundPosition = +window.pageYOffset+'px';
+        })
+    </script>
+
+    <script>
+        const nav = document.querySelector('.nav');
+        const menu = document.querySelector('.menu-toggle');
+
+        menu.addEventListener('click', function(){
+            nav.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+</html>

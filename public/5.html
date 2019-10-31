@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/5.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Guide to learning web dev - part 1</title>
+</head>
+<body>
+
+     <header style="position: absolute; top: 0; left: 0; z-index: 1000">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog_list.html">Blog</a></li>
+                <li><a href="https://www.moedun.com" target="_blank">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+    <div id="bg"></div>
+    <div class="wrapper">
+        <h1 class="title">Guide to learning Frontend Web Development - part 1</h1>
+        <img src="./images/5/5.1.png" alt="featured image">
+        <br><br><br>
+        <h2>How do you start? Where do you start?</h2>
+        <p>Before start, create a github account and get comfortable with github. You will push your work to github everyday. Employers will look at your github profile and judge you according to how active you are on github.</p>
+
+
+        <br><br>
+
+        <h2>Phase 1: HTML, CSS and JAVASCRIPT</h2>
+
+        <h3>START WITH HTML AND CSS (duration: 1 month) </h3>
+        <br>
+        <p>- HTML : It’s the content <br> (text, images, videos, links)      </p>
+        
+        <p>- CSS : It’s the style <br> (layouts, colors, typography, animations)
+        </p>
+        <br><br>
+
+        <div class="list_container">
+            <ul>
+                <li><p>Learn the basics</p> </li>
+                <li><p>Practice building some websites (google, facebook, 42intra)</p> </li>
+                <li><p>Learn how to make 1 column layouts, 2 column layouts, 3 ...</p></li>
+                <li><p>Learn about Float and Clear, Flexbox and Grid</p></li>
+
+                <br><br>
+                <li><p>Learn about Responsive Designs (how website look on phone or tablet compared to desktop)</p></li>
+                <li><p>Learn about Semantic approach of writing HTML5 and CSS3 (html tags, header, nav, ...)</p></li>
+                <li><p>Learn about Media Queries (make website responsive depending on devices)</p></li>
+                <li><p>Learn about typography</p></li>
+                <li><p>Build some more projects and use everything you learnt till now.</p></li>
+                <li><p>Practice, practice, practice</p></li>
+            </ul>
+        </div>
+
+
+
+
+        <br><br><br>
+
+        <img src="./images/5/5.2.jpg" alt="featured image">
+
+        <br><br><br>
+
+        <h2>Learn JAVASCRIPT (duration 2 weeks)</h2>
+
+       <div class="list_container">
+            <ul>
+                <li><p>Start with basics (variables, types, if, loops, functions, objects)</p></li>
+                <li><p>Solve coding challenges (solve 20 and then after that 1 a day) => link to coding challenge + solution : consistency is key</p></li>
+                <li><p>Learn object oriented programming Basics (prototype, this, instantiation, inheritance)</p></li>
+                <li><p>  Learn the Basics, you will forget, but it’s gonna be easier to learn again when u need it</p></li>
+                <li><p>Learn why OOP is important</p></li>
+            </ul>
+        </div>
+
+        <br><br>
+
+        <img src="./images/5/5.3.png" alt="featured image">
+
+        <br><br><br>
+
+
+        <h2>LEARN DOM - Vanilla-js</h2>
+        <p>At this point do not use any library. Many job interviews require you to know to code in vanillaJs in their code test.</p>
+        
+        <br>
+        <div class="list_container">
+            <ul>
+                <li><p>Basics (querying, common methods)</p></li>
+                <li><p>Start building things (simple js clock, countdown timer, rock paper scissors, todolist)
+
+                </p></li>
+            </ul>
+        </div>
+        <br>
+
+        <h3>Note:</h3>
+        <p>At this point, you should be comfortable with html and css and you should be decent with javascript.
+           So you can start making money with what you have learnt so far 
+        </p>
+        <br><br>
+        <p>Check out my article on <a href="../7:money/1.html">How to make money with what you've learnt so far</a></p>
+        <br><br>
+
+        <p>Check out the <a href="../6/1.html">Guide to learning Frontend Web Development - part 2</a></p>
+    </div>
+
+    <div class="footer">
+        <p style="padding-left: 20px;"> &copy; Created by medun <script>document.write(new Date().getFullYear())</script></p>
+        <div class="links">
+                <a href="contact.html">Contact</a>
+                <a href="policies.html">Policies</a>
+                <a href="sitemap.html">Sitemap</a>
+        </div>
+        
+    </div>
+
+
+
+    <script>
+        var bgPattern = document.getElementById('bg');
+        window.addEventListener('scroll', function(){
+            bgPattern.style.backgroundPosition = +window.pageYOffset+'px';
+        })
+    </script>
+    
+    <script>
+        const nav = document.querySelector('.nav');
+        const menu = document.querySelector('.menu-toggle');
+
+        menu.addEventListener('click', function(){
+            nav.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>

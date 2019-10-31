@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/3.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>Having a healthy lifestyle while at 42</title>
+</head>
+<body>
+
+    <header style="position: absolute; top: 0; left: 0; z-index: 1000">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog_list.html">Blog</a></li>
+                <li><a href="https://www.moedun.com" target="_blank">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+
+
+    <div id="bg"></div>
+    <div class="wrapper">
+        <h1 class="title">How to have a healthy lifestyle while studying at 42
+        </h1>
+        <img src="./images/3/3.1.png" alt="featured image">
+        <br><br>
+        <p>Having a healthy lifestyle means eating properly, sleeping properly and getting enough exercise. The cantina at 42 solves the eating problem. You solve the sleeping problem by having a fixed schedule.</p>
+            <br>
+            <p>Check out my <a href="../2/1.html"> article</a> to learn about the benefits of having a fixed schedule. What about the exercising part ?</p>
+
+
+        <br><br><br>
+
+        <h2>The problem with exercising while at 42</h2>
+
+        <p>At 42, despite having a workout room in the dorms, most of us do not find the motivation or energy to workout on a daily basis. 99% of the people at 42 do not get enough exercise. When you account for the fact that you spend 10 hours a day sitting down and you accumulate that over a period of a year without exercise, the situation starts to sound alarming. </p>
+
+        <br><br>
+        <p>It’s proven that 30 minutes of exercise daily is all a person needs to stay healthy. Working out is also beneficial in many other ways. For instance, it can help you learn better by staying focussed over a longer period of time.</p>
+
+
+        <br><br>
+        <img src="./images/3/3.2.png" alt="featured image">
+
+        <br><br><br>
+
+        <h2>How to get at least 30 minutes of exercise daily at 42?</h2>
+        <div class="list_container">
+            <ul>
+                <li><p> When you wake up, immediately do 10 push-ups and 10 sit-ups. It will wake you up and contribute to your daily exercise goals.</p></li>
+                <br>
+                <li><p> Stop using the elevator. Stairs all day everyday. That’s another way to exercise. Without realizing, you go up and down at least 3 times a day. </p></li>
+                <br>
+                <li><p> Walking to the lab and back. It’s a five minutes walk to the lab. You go to the lab in the morning, you come back for lunch, you go back after lunch and come back in the evening. That’s 20 minutes of walking, give or take. </p></li>
+            </ul>
+        </div>
+        
+
+
+
+
+        <br><br>
+
+        <img src="./images/3/3.3.png" alt="featured image">
+
+        <br><br><br>
+
+
+        
+        <p> The point I’m trying to make is, you don’t necessarily need to go to the gym to get your daily exercise. Get creative and make sure you get at least 30 minutes of exercise daily. It will help you in the long run.
+             <br><br> 
+             Check out my article about <a href="../4/1.html"> How to get a job as soon as possible</a>.</p>
+    </div>
+
+    <div class="footer">
+        <p style="padding-left: 20px;"> &copy; Created by medun <script>document.write(new Date().getFullYear())</script></p>
+        <div class="links">
+                <a href="contact.html">Contact</a>
+                <a href="policies.html">Policies</a>
+                <a href="sitemap.html">Sitemap</a>
+        </div>
+        
+    </div>
+
+
+    <script>
+        var bgPattern = document.getElementById('bg');
+        window.addEventListener('scroll', function(){
+            bgPattern.style.backgroundPosition = +window.pageYOffset+'px';
+        })
+    </script>
+    <script>
+        const nav = document.querySelector('.nav');
+        const menu = document.querySelector('.menu-toggle');
+
+        menu.addEventListener('click', function(){
+            nav.classList.toggle('active');
+        })
+    </script>
+    
+</body>
+</html>
